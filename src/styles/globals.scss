@@ -1,0 +1,106 @@
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap");
+
+/* ===========================
+   RESET
+=========================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container {
+  width: min(92%, 1320px);
+  margin-inline: auto;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section {
+  padding: 120px 0;
+}
+
+/* ===========================
+   VARIABLES
+=========================== */
+
+:root {
+  --primary: #c89b5d;
+  --secondary: #7b4f2a;
+
+  --white: #ffffff;
+  --black: #0f0f0f;
+
+  --gray: #a8a8a8;
+
+  --transition: .4s ease;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-track {
+  background: #161616;
+}
