@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Contact.scss";
 
 import {
@@ -8,6 +9,78 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    guests: "",
+    date: "",
+    time: "",
+    request: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const sendWhatsApp = (e) => {
+    e.preventDefault();
+    const formattedDate = formData.date
+      ? new Date(formData.date).toLocaleDateString("en-IN")
+      : "";
+
+    const formattedTime = formData.time
+      ? new Date(`1970-01-01T${formData.time}`).toLocaleTimeString("en-IN", {
+          hour: "numeric",
+          minute: "2-digit",
+          hour12: true,
+        })
+      : "";
+    const message = `
+ *KOALA CAFF*
+
+ *NEW TABLE RESERVATION*
+
+━━━━━━━━━━━━━━━
+
+ Name : ${formData.name}
+
+ Phone : ${formData.phone}
+
+ Email : ${formData.email}
+
+ Guests : ${formData.guests}
+
+ Date : ${formattedDate}
+
+ Time : ${formattedTime}
+
+ Special Request :
+${formData.request || "No special request"}
+
+━━━━━━━━━━━━━━━
+
+Thank You ❤️
+`;
+
+    window.open(
+      `https://wa.me/919001697576?text=${encodeURIComponent(message)}`,
+      "_blank",
+    );
+
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      guests: "",
+      date: "",
+      time: "",
+      request: "",
+    });
+  };
   return (
     <section className="contact" id="contact">
       <div className="container">
@@ -46,9 +119,9 @@ const Contact = () => {
             <h3>Visit Us</h3>
 
             <p>
-              Koala Caff
-              <br />
-              Jaipur, Rajasthan
+               C-20, Mahalaxmi Nagar Road,
+               <br />
+               Malviya Nagar, Jaipur,
             </p>
           </div>
 
@@ -107,26 +180,92 @@ const Contact = () => {
               Fill out the form below and our team will get back to you shortly.
             </p>
 
-            <form>
+            <form onSubmit={sendWhatsApp}>
               <div className="contact__row">
-                <input type="text" placeholder="Full Name" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
 
-                <input type="tel" placeholder="Phone Number" />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/\D/g, "");
+
+                    if (value.length <= 10) {
+                      setFormData({
+                        ...formData,
+                        phone: value,
+                      });
+                    }
+                  }}
+                  required
+                />
               </div>
 
               <div className="contact__row">
-                <input type="email" placeholder="Email Address" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
 
-                <input type="number" placeholder="Guests" />
+                <input
+                  type="number"
+                  name="guests"
+                  placeholder="Guests"
+                  value={formData.guests}
+                  onChange={handleChange}
+                  min="1"
+                  max="20"
+                  required
+                />
               </div>
 
               <div className="contact__row">
-                <input type="date" />
+                <div className="contact__field">
+                  <label>Date</label>
 
-                <input type="time" />
+                  <input
+                    type="date"
+                    name="date"
+                    min={new Date().toISOString().split("T")[0]}
+                    value={formData.date}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className="contact__field">
+                  <label>Time</label>
+
+                  <input
+                    type="time"
+                    name="time"
+                    value={formData.time}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
               </div>
 
-              <textarea rows="7" placeholder="Special Request..."></textarea>
+              <textarea
+                rows="7"
+                name="request"
+                placeholder="Special Request..."
+                value={formData.request}
+                onChange={handleChange}
+              />
 
               <button className="contact__button" type="submit">
                 Reserve Table
