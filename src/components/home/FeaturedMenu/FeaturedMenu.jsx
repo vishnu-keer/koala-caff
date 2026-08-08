@@ -66,25 +66,6 @@ const FeaturedMenu = () => {
 
                 <div className="featured-menu__bottom">
                   <span className="featured-menu__price">{item.price}</span>
-
-                  <a
-                    href={`https://wa.me/919001697576?text=${encodeURIComponent(
-                      `Hello Koala Caff,
-
-I would like to place an order for:
-
-${item.title}
-
-Kindly let me know the availability and the estimated preparation time.
-
-Looking forward to your response.`,
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="featured-menu__button"
-                  >
-                    Order Now
-                  </a>
                 </div>
               </div>
             </div>

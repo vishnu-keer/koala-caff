@@ -20,7 +20,7 @@ import sandwich from "../assets/images/menu/sandwich.webp";
 import brownie from "../assets/images/menu/brownie.webp";
 import muffin from "../assets/images/menu/muffin.webp";
 import waffle from "../assets/images/menu/waffle.webp";
-import cheesecake from "../assets/images/menu/cheesecake.webp";
+import sizzlingBrownie from "../assets/images/menu/sizzling-brownie.webp";
 
 export const menuData = {
 
@@ -134,38 +134,38 @@ export const menuData = {
 
   Desserts: [
 
-    {
-      id: 13,
-      image: brownie,
-      title: "Brownie",
-      description: "Warm chocolate brownie with rich taste.",
-      price: "₹169"
-    },
+  {
+    id: 13,
+    image: brownie,
+    title: "Brownie",
+    description: "Warm chocolate brownie with rich taste.",
+    price: "₹169"
+  },
 
-    {
-      id: 14,
-      image: muffin,
-      title: "Chocolate Muffin",
-      description: "Soft baked muffin with chocolate chips.",
-      price: "₹79"
-    },
+  {
+    id: 14,
+    image: muffin,
+    title: "Chocolate Muffin",
+    description: "Soft baked muffin with chocolate chips.",
+    price: "₹79"
+  },
 
-    {
-      id: 15,
-      image: waffle,
-      title: "Belgian Waffle",
-      description: "Fresh waffle served with chocolate.",
-      price: "₹199"
-    },
+  {
+    id: 15,
+    image: sizzlingBrownie,
+    title: "Chef’s Special Sizzling Brownie",
+    description: "Warm fudgy brownie served sizzling with vanilla ice cream.",
+    price: "₹199"
+  },
 
-    {
-      id: 16,
-      image: cheesecake,
-      title: "Cheesecake",
-      description: "Creamy baked cheesecake with berry topping.",
-      price: "₹229"
-    }
+  {
+    id: 16,
+    image: affogato,
+    title: "Signature Affogato",
+    description: "Espresso poured over premium vanilla ice cream.",
+    price: "₹229"
+  }
 
-  ]
+]
 
 };

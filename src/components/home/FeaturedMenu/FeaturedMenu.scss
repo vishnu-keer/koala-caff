@@ -344,55 +344,6 @@
 
   }
 
-  &__button {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-decoration: none;
-
-    white-space: nowrap;
-
-    border: none;
-
-    cursor: pointer;
-
-    height: 48px;
-
-    padding: 0 24px;
-
-    border-radius: 999px;
-
-    background: #6F4E37;
-
-    color: #fff;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    transition: .35s;
-
-    flex-shrink: 0;
-
-    &:hover {
-
-      background: #D9B06F;
-
-      color: #111;
-
-      transform: translateY(-3px);
-
-      box-shadow:
-        0 12px 30px rgba(217, 176, 111, .35);
-
-    }
-
-  }
-
 
   /* ======================================
             DECORATIVE SHAPES

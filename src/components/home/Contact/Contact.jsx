@@ -67,8 +67,9 @@ Thank You ❤️
 `;
 
     window.open(
-      `https://wa.me/919001697576?text=${encodeURIComponent(message)}`,
+      `https://wa.me/919145908951?text=${encodeURIComponent(message)}`,
       "_blank",
+      "noopener,noreferrer",
     );
 
     setFormData({
@@ -119,9 +120,11 @@ Thank You ❤️
             <h3>Visit Us</h3>
 
             <p>
-               C-20, Mahalaxmi Nagar Road,
-               <br />
-               Malviya Nagar, Jaipur,
+              R.H.B, 68/105, Haldighati Marg,
+              <br />
+              Sanganer, Pratap Nagar,
+              <br />
+              Jaipur, Rajasthan 302033
             </p>
           </div>
 
@@ -134,7 +137,7 @@ Thank You ❤️
 
             <h3>Call Us</h3>
 
-            <a href="tel:+919001697576">+91 90016 97576</a>
+            <a href="tel:+919145908951">+91 9145908951</a>
           </div>
 
           <div className="contact__card">
@@ -146,7 +149,7 @@ Thank You ❤️
 
             <h3>Email Us</h3>
 
-            <a href="mailto:koalacaff@gmail.com">koalacaff@gmail.com</a>
+            <a href="mailto:Caffkoala@gmail.com">Caffkoala@gmail.com</a>
           </div>
 
           <div className="contact__card">
@@ -161,7 +164,7 @@ Thank You ❤️
             <p>
               Everyday
               <br />
-              9:00 AM – 11:00 PM
+              10:30 AM – 10:30 PM
             </p>
           </div>
         </div>
@@ -313,7 +316,7 @@ Thank You ❤️
 
           <div className="contact__actions">
             <a
-              href="https://wa.me/919001697576"
+              href="https://wa.me/919145908951"
               target="_blank"
               rel="noopener noreferrer"
               className="contact__whatsapp"
@@ -321,7 +324,7 @@ Thank You ❤️
               WhatsApp Us
             </a>
 
-            <a href="tel:+919001697576" className="contact__call">
+            <a href="tel:+919145908951" className="contact__call">
               Call Now
             </a>
           </div>

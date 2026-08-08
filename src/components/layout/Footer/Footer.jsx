@@ -12,30 +12,21 @@ import {
 const Footer = () => {
   return (
     <footer className="footer">
-
       <div className="container">
-
         {/* ===========================
                 TOP CTA
         =========================== */}
 
         <div className="footer__cta">
-
-          <h2>
-            Ready to Visit Koala Caff?
-          </h2>
+          <h2>Ready to Visit Koala Caff?</h2>
 
           <p>
-            Reserve your table today and enjoy handcrafted coffee,
-            delicious food and a cozy ambience.
+            Reserve your table today and enjoy handcrafted coffee, delicious
+            food and a cozy ambience.
           </p>
 
           <div className="footer__buttons">
-
-            <a
-              href="#contact"
-              className="footer__primary"
-            >
+            <a href="#contact" className="footer__primary">
               Book a Table
             </a>
 
@@ -47,9 +38,7 @@ const Footer = () => {
             >
               Get Directions
             </a>
-
           </div>
-
         </div>
 
         {/* ===========================
@@ -57,25 +46,17 @@ const Footer = () => {
         =========================== */}
 
         <div className="footer__grid">
-
           {/* COLUMN 1 */}
 
           <div className="footer__column">
-
-            <img
-              src={logo}
-              alt="Koala Caff"
-              className="footer__logo"
-            />
+            <img src={logo} alt="Koala Caff" className="footer__logo" />
 
             <p className="footer__description">
-              Experience handcrafted coffee,
-              delicious food and unforgettable
+              Experience handcrafted coffee, delicious food and unforgettable
               moments at Koala Caff.
             </p>
 
             <div className="footer__socials">
-
               <a
                 href="https://www.instagram.com/koalacaff/"
                 target="_blank"
@@ -93,15 +74,12 @@ const Footer = () => {
               >
                 <FaMapMarkerAlt />
               </a>
-
             </div>
-
           </div>
 
           {/* COLUMN 2 */}
 
           <div className="footer__column">
-
             <h3>Quick Links</h3>
 
             <a href="#home">Home</a>
@@ -113,35 +91,33 @@ const Footer = () => {
             <a href="#menu">Menu</a>
 
             <a href="#contact">Contact</a>
-
           </div>
 
           {/* COLUMN 3 */}
 
           <div className="footer__column">
-
             <h3>Opening Hours</h3>
 
             <p>Monday – Sunday</p>
 
-            <p>09:00 AM – 11:00 PM</p>
+            <p>10:30 AM – 10:30 PM</p>
 
             <br />
 
             <h3>Location</h3>
 
             <p>
-              Jaipur,
+              R.H.B, 68/105, Haldighati Marg,
               <br />
-              Rajasthan
+              Sanganer, Pratap Nagar,
+              <br />
+              Jaipur, Rajasthan 302033
             </p>
-
           </div>
 
           {/* COLUMN 4 */}
 
           <div className="footer__column">
-
             <h3>Contact Us</h3>
 
             <a href="tel:+919001697576">
@@ -149,9 +125,9 @@ const Footer = () => {
               <span>+91 90016 97576</span>
             </a>
 
-            <a href="mailto:koalacaff@gmail.com">
+            <a href="mailto:Caffkoala@gmail.com">
               <FaEnvelope />
-              <span>koalacaff@gmail.com</span>
+              <span>Caffkoala@gmail.com</span>
             </a>
 
             <a
@@ -162,9 +138,7 @@ const Footer = () => {
               <FaMapMarkerAlt />
               <span>Open in Google Maps</span>
             </a>
-
           </div>
-
         </div>
 
         {/* ===========================
@@ -172,20 +146,11 @@ const Footer = () => {
         =========================== */}
 
         <div className="footer__bottom">
+          <p>© {new Date().getFullYear()} Koala Caff. All Rights Reserved.</p>
 
-          <p>
-            © {new Date().getFullYear()} Koala Caff.
-            All Rights Reserved.
-          </p>
-
-          <p>
-            Crafted with ❤️ in Jaipur
-          </p>
-
+          <p>Crafted with ❤️ in Jaipur</p>
         </div>
-
       </div>
-
     </footer>
   );
 };
