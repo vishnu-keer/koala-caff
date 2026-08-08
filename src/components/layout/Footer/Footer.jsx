@@ -120,9 +120,9 @@ const Footer = () => {
           <div className="footer__column">
             <h3>Contact Us</h3>
 
-            <a href="tel:+919001697576">
+            <a href="tel:+919145908951">
               <FaPhoneAlt />
-              <span>+91 90016 97576</span>
+              <span>+91 9145908951</span>
             </a>
 
             <a href="mailto:Caffkoala@gmail.com">
