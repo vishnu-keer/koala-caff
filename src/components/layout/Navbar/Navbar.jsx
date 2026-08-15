@@ -11,7 +11,7 @@ import {
 
 import "./Navbar.scss";
 
-import logo from "../../../assets/logos/logo.webp";
+import logo from "../../../assets/logos/logo.jpeg";
 
 const navLinks = [
   {
