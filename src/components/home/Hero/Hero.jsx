@@ -1,3 +1,4 @@
+
 import "./Hero.scss";
 
 import heroBg from "../../../assets/images/hero/hero-night.webp";
@@ -11,6 +12,7 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <img src={heroBg} alt="Koala Caff Jaipur" className="hero__bg" />
+
       {/* Overlay */}
       <div className="hero__overlay"></div>
 
@@ -23,7 +25,6 @@ const Hero = () => {
 
             <h1 className="hero__title">
               <span className="hero__title-line">KOALA</span>
-
               <span className="hero__title-line">CAFF</span>
             </h1>
 
@@ -35,7 +36,13 @@ const Hero = () => {
             </p>
 
             <div className="hero__buttons">
-              <a href="#menu" className="hero__primary">
+              <a
+                href="/menu.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero__primary"
+                aria-label="Explore Koala Caff PDF menu"
+              >
                 Explore Menu
               </a>
 
@@ -71,9 +78,9 @@ const Hero = () => {
 
             {/*
             <img
-                src={coffeeCup}
-                alt="Coffee Cup"
-                className="hero__cup"
+              src={coffeeCup}
+              alt="Coffee Cup"
+              className="hero__cup"
             />
             */}
           </div>
